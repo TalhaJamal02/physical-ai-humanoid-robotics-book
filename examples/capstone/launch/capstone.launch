@@ -1,0 +1,31 @@
+<launch>
+  <!-- Capstone Project Launch File -->
+
+  <!-- This file orchestrates all components of the Capstone project:
+       - ROS 2 nodes for humanoid robot control
+       - Simulation environment (Gazebo, Unity, Isaac Sim)
+       - VLA system (pipeline)
+       - Voice recognition agent
+       - Main agent
+  -->
+
+  <!-- ROS 2 Node: Main Agent -->
+  <node pkg="capstone" exec="main_agent.py" name="main_agent" output="screen" />
+
+  <!-- ROS 2 Node: Voice Agent -->
+  <node pkg="capstone" exec="voice_agent.py" name="voice_agent" output="screen" />
+
+  <!-- Simulation Environment -->
+  <!-- Example: Uncomment and configure for your simulator -->
+  <!--
+  <include file="$(find gazebo_ros)/launch/empty_world.launch" />
+  <include file="$(find unity_ros)/launch/unity.launch" />
+  <include file="$(find isaac_sim)/launch/isaac_sim.launch" />
+  -->
+
+  <!-- VLA Pipeline -->
+  <!-- Placeholder for launching VLA model if separate execution is needed -->
+  <!--
+  <node pkg="vla" exec="pipeline.py" name="vla_pipeline" output="screen" />
+  -->
+</launch>

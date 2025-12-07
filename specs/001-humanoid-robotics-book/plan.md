@@ -1,31 +1,25 @@
-# Implementation Plan: [FEATURE]
+# Implementation Plan: Physical AI & Humanoid Robotics Book
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
-**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
+**Branch**: `001-humanoid-robotics-book` | **Date**: 2025-12-05 | **Spec**: [spec.md](./spec.md)
+**Input**: Feature specification from `specs/001-humanoid-robotics-book/spec.md`
 
-**Note**: This template is filled in by the `/sp.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
+**Note**: This template is filled in by the `/sp.plan` command.
 
 ## Summary
 
-[Extract from feature spec: primary requirement + technical approach from research]
+This plan outlines the architecture and development strategy for the "Physical AI & Humanoid Robotics Book". The book will be a Docusaurus project, structured into four main modules: 1) Physical AI foundations, 2) ROS 2 robotics development, 3) Simulation (Gazebo, Unity, Isaac Sim), and 4) Vision-Language-Action (VLA) + Agentic Control. The reader will be guided from foundational concepts to building a complete voice-controlled humanoid robot capstone project.
 
 ## Technical Context
 
-<!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
--->
-
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: Markdown (for Docusaurus), Python 3.10+ (for ROS 2 and AI), C++ (for high-performance ROS 2 nodes).
+**Primary Dependencies**: Docusaurus, ROS 2 Humble/Iron, Gazebo, Unity (with Robotics Hub), NVIDIA Isaac Sim, PyTorch.
+**Storage**: N/A (Content is static Markdown and code).
+**Testing**: Docusaurus build process, end-to-end testing of the capstone project in simulation.
+**Target Platform**: Ubuntu 22.04 LTS. Hardware: Jetson series for edge deployment, GPU-enabled workstation for simulation and training.
+**Project Type**: Documentation/Book (Docusaurus).
+**Performance Goals**: N/A (Focus is on clarity and reproducibility, not performance benchmarks).
+**Constraints**: All code examples must be runnable and tested. Content must be Docusaurus-compatible.
+**Scale/Scope**: A comprehensive book covering four modules and a capstone project.
 
 ## Constitution Check
 
