@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/physical-ai-humanoid-robotics-book/:path*",
+      "destination": "/:path*"
+    }
+  ]
+}

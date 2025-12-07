@@ -12,7 +12,7 @@ const config = {
   },
 
   url: 'https://devexplorerr.github.io',
-  baseUrl: '/',
+  baseUrl: '/physical-ai-humanoid-robotics-book/',
 
   organizationName: 'DevExplorerr',
   projectName: 'physical-ai-humanoid-robotics-book',
