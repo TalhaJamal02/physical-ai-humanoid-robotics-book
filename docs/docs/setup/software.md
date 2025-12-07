@@ -4,24 +4,25 @@ sidebar_position: 2
 
 # Software Installation
 
-This guide covers the installation of the necessary software for this book.
+This guide covers the installation of all necessary software for the projects in this book.
 
 ## Core Dependencies
 
-- **Ubuntu 22.04 LTS**: The primary operating system for this book.
-- **ROS 2 Humble Hawksbill**: The recommended ROS 2 distribution.
-- **Python 3.10+**: With `pip` and `venv`.
+- **Operating System:** Ubuntu 22.04 LTS  
+- **ROS 2:** Humble Hawksbill distribution (recommended)  
+- **Python:** Version 3.10 or higher, with `pip` and `venv` for managing packages and virtual environments  
 
 ## Simulators
 
-- **Gazebo**: Installation instructions for Gazebo Fortress.
-- **Unity**: Installation of Unity Hub and the Unity Editor.
-- **NVIDIA Isaac Sim**: Installation and setup of Isaac Sim.
+- **Gazebo:** Install Gazebo Fortress for ROS 2 integration.  
+- **Unity:** Install Unity Hub and the Unity Editor (preferably LTS version).  
+- **NVIDIA Isaac Sim:** Install via NVIDIA Omniverse and set up the environment for robotics simulation.  
 
 ## Python Libraries
 
-A `requirements.txt` file will be provided for each project. The main libraries used are:
-- `pytorch`
-- `transformers`
-- `gradio`
-- `rclpy`
+A `requirements.txt` file is provided for each project. Key libraries include:  
+
+- `torch` (PyTorch for AI models)  
+- `transformers` (for NLP and VLA tasks)  
+- `gradio` (optional GUI interface)  
+- `rclpy` (ROS 2 Python client library)

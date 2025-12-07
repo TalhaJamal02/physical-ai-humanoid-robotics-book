@@ -1,29 +1,19 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# Voice Agent
+# Launching the Capstone Project
 
-## Purpose
+## Steps to Launch
 
-The voice agent captures spoken commands and converts them into text to be sent to the VLA pipeline.  
-It is the first step in the Capstone workflow.
+1. Start the ROS 2 master to initialize the communication layer.
+2. Launch your simulation environment of choice (Gazebo, Unity, or Isaac Sim).
+3. Run the VLA pipeline using `examples/vla/pipeline.py`.
+4. Start the voice agent via `examples/capstone/voice_agent.py`.
+5. Launch the main agent (`examples/capstone/main_agent.py`) to link the VLA output with ROS 2 action nodes.
 
-## How it Works
+## Notes
 
-1. Captures audio from a microphone.
-2. Converts audio to text using speech recognition.
-3. Sends text to the VLA pipeline or main agent.
-
-## Python Implementation
-
-- `examples/capstone/voice_agent.py` contains the actual Python code.
-- Key functions:
-  - `listen_command()` – listens to the microphone and returns a text command.
-  - Handles errors like unrecognized speech or API issues.
-
-## Independent Test
-
-- Speak a command into the microphone.
-- Verify that the recognized text matches your speech.
-- Ensure the text can be sent to the main agent for execution.
+- Confirm that all required dependencies for ROS 2, simulation tools, and Python packages are installed.
+- Modify topic names, network ports, or ROS 2 namespaces as needed for your setup.
+- Utilize the provided launch files for a more automated and streamlined startup process.

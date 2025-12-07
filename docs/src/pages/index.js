@@ -20,7 +20,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--primary button--lg"
-            to="https://github.com/DevExplorerr"
+            to="https://github.com/TalhaJamal02"
           >
             GitHub
           </Link>

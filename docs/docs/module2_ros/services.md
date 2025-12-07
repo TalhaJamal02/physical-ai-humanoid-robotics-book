@@ -4,10 +4,10 @@ sidebar_position: 3
 
 # ROS 2 Service Example: Humanoid Arm Control
 
-A **service** is used for request/response communication.  
-We will create a service that tells the humanoid to **grasp an object**.
+A **service** in ROS 2 enables request/response communication.  
+This example creates a service that tells a humanoid robot to **grasp or release an object**.
 
-## Service Definition
+## Service Implementation
 
 ```python
 # grasp_service.py
@@ -18,6 +18,7 @@ from std_srvs.srv import SetBool
 class GraspService(Node):
     def __init__(self):
         super().__init__('grasp_service')
+        # Create a service named 'grasp_object' using SetBool
         self.srv = self.create_service(SetBool, 'grasp_object', self.handle_grasp)
 
     def handle_grasp(self, request, response):

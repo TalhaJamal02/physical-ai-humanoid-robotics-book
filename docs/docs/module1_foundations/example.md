@@ -4,72 +4,76 @@ sidebar_position: 3
 
 # Physical AI Example: Warehouse Picking Robot
 
-Here’s a simple but realistic example to make the concepts concrete.  
-If your hackathon idea can't beat this level of clarity, fix it.
+This example grounds the core concepts in a practical setting.  
+If your hackathon idea can’t match this level of clarity and completeness, refine it.
+
+---
 
 ## Scenario
 
 A warehouse robot must:
+
 1. Navigate to a shelf  
 2. Identify the correct item  
 3. Pick it up  
 4. Deliver it to a packing station  
 
-Classic Physical AI task.
+This is a classic, end-to-end Physical AI workflow.
 
 ---
 
 ## How Perception Works Here
 
-- **Camera detects barcodes and shapes**
-- **Depth sensor maps shelf distance**
-- **IMU tracks robot orientation**
-- **Force sensors ensure the gripper doesn’t crush the item**
+- **Camera recognizes barcodes, labels, and object shapes**
+- **Depth sensor measures shelf distance and item position**
+- **IMU keeps track of robot orientation and stability**
+- **Force sensors regulate gripper pressure to prevent item damage**
 
-Without this, the robot grabs the wrong object or slams into shelves like an idiot.
+Without accurate perception, the robot misidentifies items, collides with shelves, or fails basic tasks.
 
 ---
 
 ## How Planning Works Here
 
-The robot performs:
+The robot engages in multiple levels of planning:
 
-### Path planning
-- Uses **A*** or **D* Lite** to find shortest collision-free route.
+### Path Planning
+- Uses algorithms like **A\*** or **D\* Lite** to compute collision-free navigation routes.
 
-### Motion planning
-- Plans smooth trajectories around boxes and humans.
+### Motion Planning
+- Generates smooth arm and base trajectories that avoid obstacles such as boxes, racks, and people.
 
-### Task planning
-- “Go to shelf → Locate item → Pick item → Navigate back.”
+### Task Planning
+- High-level sequencing such as:  
+  “Navigate to shelf → Locate item → Grip item → Return to packing area.”
 
 ---
 
 ## How Control Works Here
 
-- **PID controllers** keep wheel speed consistent.
-- **Arm control** uses inverse kinematics to reach the item accurately.
-- **Gripper pressure control** prevents item damage.
+- **PID controllers** ensure steady, predictable wheel motion.  
+- **Arm control** uses inverse kinematics for precise item retrieval.  
+- **Gripper pressure control** adjusts applied force to prevent drops or crushing.
 
-If this layer is poorly tuned → uncontrolled shaking, dropped items, or total failure.
+Poor control tuning leads to wobbling motion, unstable grasps, or complete task failure.
 
 ---
 
 ## Embodiment in This Example
 
-- **Wheeled base** for mobility  
-- **6-DOF robotic arm** for manipulation  
-- **Parallel gripper** for stable grasp  
-- **Battery pack** for long operation  
-- **Sensor suite** mounted at optimal angles  
+- **Wheeled base** for fast, efficient mobility  
+- **6-DOF robotic arm** for flexible manipulation  
+- **Parallel gripper** for reliable grasping  
+- **Battery pack** for continuous operation  
+- **Sensor suite** mounted at angles that maximize coverage  
 
-The body enables the tasks — not the other way around.
+The robot’s body isn’t an afterthought — it’s what makes these capabilities physically possible.
 
 ---
 
 ## Why This Example Matters
 
-It shows the complete Perception–Planning–Control loop in action.  
-This is the minimum bar for any Physical AI system worth being judged in a hackathon.
+This scenario illustrates the full Perception → Planning → Control cycle operating on real hardware.  
+It also establishes the baseline expectations for any Physical AI hackathon project.
 
-If your prototype or concept doesn’t demonstrate at least *some* version of this loop, then it’s incomplete.
+If your prototype or concept doesn’t showcase at least a simplified version of this loop, then it’s missing essential elements of Physical AI.

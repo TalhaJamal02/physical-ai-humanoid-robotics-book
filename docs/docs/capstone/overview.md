@@ -6,23 +6,30 @@ sidebar_position: 1
 
 ## Objective
 
-Integrate all modules (Physical AI Foundations, ROS 2, Simulation, and VLA) into a single coherent system. The robot should be able to perceive the environment, interpret commands, and perform actions.
+This capstone brings together every major module—Physical AI Foundations, ROS 2, Simulation, and the VLA system—into a single integrated humanoid-robot pipeline. By the end of the project, the robot should be capable of perceiving its surroundings, understanding spoken instructions, and performing meaningful actions based on those instructions.
 
 ## Components
 
-1. **Voice Agent**: Converts voice commands into text.
-2. **VLA Module**: Processes visual input and command text to generate robot actions.
-3. **ROS 2 Nodes**: Execute actions on the robot (simulation or real).
-4. **Simulation Environment**: Test robot behavior safely in Gazebo, Unity, or Isaac Sim.
+1. **Voice Agent**  
+   Captures spoken commands and converts them into text.
+
+2. **VLA Module**  
+   Interprets visual input and natural-language commands to generate structured robot actions.
+
+3. **ROS 2 Nodes**  
+   Translate high-level actions into low-level robot behavior, whether running on a real robot or inside a simulator.
+
+4. **Simulation Environment**  
+   Provides a safe space—Gazebo, Unity, or Isaac Sim—to evaluate and visualize robotic behavior before deploying to hardware.
 
 ## Workflow
 
-1. User speaks a command.
-2. Voice agent converts speech to text.
-3. VLA module generates a structured robot command.
-4. ROS 2 nodes execute the command.
-5. Simulation environment visualizes the outcome.
+1. The user speaks a command.
+2. The voice agent transcribes the speech into text.
+3. The VLA module analyzes both the visual input and the command text, then produces a robot-action description.
+4. ROS 2 nodes interpret these actions and execute them.
+5. The simulation environment renders the resulting robotic motion and interactions.
 
 ## Independent Test
 
-- Give a voice command and verify the robot performs the intended action in simulation.
+- Speak a command and verify that the robot performs the expected action inside the simulation environment.

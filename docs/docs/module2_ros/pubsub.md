@@ -6,7 +6,7 @@ sidebar_position: 2
 
 In ROS 2, **publishers** send messages to a **topic**, and **subscribers** listen for messages.  
 
-This example demonstrates a humanoid robot publishing sensor data and a monitoring node subscribing to it.
+This example demonstrates a humanoid robot publishing sensor data while a monitoring node subscribes to it.
 
 ## Publisher: Joint Angles
 
@@ -18,7 +18,9 @@ from sensor_msgs.msg import JointState
 class JointPublisher(Node):
     def __init__(self):
         super().__init__('joint_publisher')
+        # Publisher sends JointState messages to the 'joint_states' topic
         self.publisher_ = self.create_publisher(JointState, 'joint_states', 10)
+        # Timer triggers publishing every 0.5 seconds
         self.timer = self.create_timer(0.5, self.publish_joint_state)
 
     def publish_joint_state(self):

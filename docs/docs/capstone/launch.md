@@ -6,14 +6,14 @@ sidebar_position: 3
 
 ## Steps to Launch
 
-1. Start the ROS 2 master.
-2. Launch simulation environment (Gazebo, Unity, or Isaac Sim).
-3. Run the VLA pipeline (`examples/vla/pipeline.py`).
-4. Start the voice agent (`examples/capstone/voice_agent.py`).
-5. Start the main agent (`examples/capstone/main_agent.py`) to connect VLA outputs to ROS 2 actions.
+1. Start the ROS 2 master to initialize the communication layer.
+2. Launch your simulation environment of choice (Gazebo, Unity, or Isaac Sim).
+3. Run the VLA pipeline using `examples/vla/pipeline.py`.
+4. Start the voice agent via `examples/capstone/voice_agent.py`.
+5. Launch the main agent (`examples/capstone/main_agent.py`) to link the VLA output with ROS 2 action nodes.
 
 ## Notes
 
-- Ensure all dependencies are installed.
-- Adjust topic names, ports, and ROS 2 namespaces if needed.
-- Use the included launch files for automated startup.
+- Confirm that all required dependencies for ROS 2, simulation tools, and Python packages are installed.
+- Modify topic names, network ports, or ROS 2 namespaces as needed for your setup.
+- Utilize the provided launch files for a more automated and streamlined startup process.

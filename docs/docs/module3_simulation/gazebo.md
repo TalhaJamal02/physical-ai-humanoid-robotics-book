@@ -4,21 +4,21 @@ sidebar_position: 2
 
 # Gazebo Simulation
 
-Gazebo is a powerful robot simulator that allows testing and development in a virtual 3D environment.
+Gazebo is a robust robot simulator that enables testing and development in a 3D virtual environment.
 
 ## Key Features
 
-- Physics-based simulation
-- Sensor simulation (LIDAR, camera, IMU)
-- Robot model testing without physical hardware
-- Supports ROS 2 integration
+- Physics-based simulation for realistic motion and collisions  
+- Sensor simulation (LiDAR, cameras, IMU, etc.)  
+- Test robot models without physical hardware  
+- Seamless ROS 2 integration for nodes, topics, services, and actions  
 
 ## Getting Started
 
-1. Install Gazebo and ROS 2 integration packages.
-2. Load your robot URDF/Xacro model.
-3. Launch the simulation using a `.launch.py` file.
-4. Interact with the robot using ROS 2 topics, services, and actions.
+1. Install Gazebo along with the ROS 2 integration packages.  
+2. Load your robot's URDF or Xacro model.  
+3. Launch the simulation using a `.launch.py` file.  
+4. Control and interact with the robot through ROS 2 topics, services, and actions.
 
 ### Example Launch Command
 

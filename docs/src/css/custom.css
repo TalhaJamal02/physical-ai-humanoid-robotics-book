@@ -1,34 +1,34 @@
 :root {
-  --ifm-color-primary: #8FABD4;
-  --ifm-color-primary-dark: #4A70A9;
-  --ifm-color-primary-darker: #3B5A81;
-  --ifm-color-primary-darkest: #2E4660;
-  --ifm-color-primary-light: #A0B5D8;
-  --ifm-color-primary-lighter: #B3C6E0;
-  --ifm-color-primary-lightest: #C6D7E8;
+  --ifm-color-primary: #4a4a4a;
+  --ifm-color-primary-dark: #2f2f2f;
+  --ifm-color-primary-darker: #1f1f1f;
+  --ifm-color-primary-darkest: #0f0f0f;
+  --ifm-color-primary-light: #6f6f6f;
+  --ifm-color-primary-lighter: #9b9b9b;
+  --ifm-color-primary-lightest: #cfcfcf;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
-  --ifm-color-background: #EFECE3;
-  --ifm-color-text: #000000;
+  --ifm-color-background: #f4f4f5;
+  --ifm-color-text: #0b0b0b;
 }
 
 /* Dark mode adjustments */
 [data-theme='dark'] {
-  --ifm-color-primary: #4A70A9;
-  --ifm-color-primary-dark: #3B5A81;
-  --ifm-color-primary-darker: #2E4660;
-  --ifm-color-primary-darkest: #1F2E42;
-  --ifm-color-primary-light: #5A80B8;
-  --ifm-color-primary-lighter: #6A90C8;
-  --ifm-color-primary-lightest: #7AA0D8;
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
-  --ifm-color-background: #000000;
-  --ifm-color-text: #EFECE3;
+  --ifm-color-primary: #807d7d;
+  --ifm-color-primary-dark: #2f2f2f;
+  --ifm-color-primary-darker: #1f1f1f;
+  --ifm-color-primary-darkest: #0f0f0f;
+  --ifm-color-primary-light: #9b9b9b;
+  --ifm-color-primary-lighter: #cfcfcf;
+  --ifm-color-primary-lightest: #e6e6e6;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.06);
+  --ifm-color-background: #0b0b0b;
+  --ifm-color-text: #e6e6e6;
 }
 
 footer {
-  background-color: #000000;
-  color: #EFECE3;
+  background-color: #0b0b0b;
+  color: #e6e6e6;
   padding: 3rem 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -49,24 +49,27 @@ footer .footer__link-items p {
   line-height: 1.5;
 }
 
-.social-icon {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  margin-right: 0.5rem;
-  background-color: #8FABD4;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  transition: background-color 0.3s;
-}
-
 .social-icon img {
   width: 20px;
   height: 20px;
   vertical-align: middle;
 }
-
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+  background-color: #4a4a4a;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  transition: background-color 0.3s;
+}
+.social-icon img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
 .social-icon:hover {
-  background-color: #4A70A9;
+  background-color: #2f2f2f;
 }
